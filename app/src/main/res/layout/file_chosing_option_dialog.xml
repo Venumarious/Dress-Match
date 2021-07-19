@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_round_corner"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_popup_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:singleLine="true"
+        android:paddingStart="4dp"
+        android:fontFamily="@font/m_medium"
+        android:text="Choose a Media"
+        android:textColor="#000" />
+
+    <LinearLayout
+        android:id="@+id/llCam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/media_option_camera"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/m_medium"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="Camera" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGalry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/media_option_gallery"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:layout_marginStart="8dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/m_medium"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="Choose from Gallery" />
+    </LinearLayout>
+</LinearLayout>
